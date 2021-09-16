@@ -15,10 +15,10 @@ button.addEventListener('click', () => {
 				image.src = data[0].url
 				})
 
-	fetch('https://cat-fact.herokuapp.com/facts/random')
+	fetch('https://catfact.ninja/fact')
 	.then(response => response.json())
 	.then((factData) => {
-		fact.innerText = factData.text
+		fact.innerText = factData.fact
 		console.log(factData.text)
 		})
 })
